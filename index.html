@@ -10,30 +10,46 @@
         <link rel="stylesheet" href="styles/stylesheet.css">
     </head>
     <body>
-        <div>
+        <div class = "container">
             <header>
                 <h1>Home Decor POS Sytem</h1>
             </header>
 
-            <div>
+            <div class="task">
                 <h2>Monthly Sales Report</h2>
                 <!-- first div is for total monthly sales -->
-                <div></div>
+                <div id="sales-report-result"></div>
                 <!-- Second div is for a breakdown of sales -->
-                <div></div>
+                <div id="sales-breakdown-results"></div>
             </div>
 
-            <div>
+            <div class="task">
                 <h2>Add New Furniture Item</h2>
                 <!-- Inputs here for adding new items -->
+                <label for="furniture-name-input">Furniture Name</label>
+                <input type="text" id="furniture-name-input">
+                <label for="furniture-category-select">Room Category:</label>
+                <select id="furniture-category-select">
+                    <option value="Bedroom">Bedroom</option>
+                    <option value="Den">Den</option>
+                    <option value="Bathroom">Bathroom</option>
+
+                </select>
+                <label for="furniture-price-input">Price</label>
+                <input type="number" id="furniture-price-input">
+                <button id="add-furniture-btn">Add Furniture</button>
             </div>
 
-            <div>
+
+
+            <div class="task">
                 <h2>Current Furniture Catalog</h2>
                 <!-- All items in the current catalog listed here -->
+                <div id="furniture-catelog-reults"></div>
             </div>
         
-            <script src="scripts/script.js" async defer></script>
         </div>
+        <script src="scripts/script.js"></script>
+
     </body>
 </html>
